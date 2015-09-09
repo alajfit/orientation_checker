@@ -47,4 +47,16 @@ var checkOrientationChanage = (function() {
     // sub routines from load
     _private.setHW();
     var cOC = (width > height) ? true : false; // true: landscape - false: portrait
+    
+    // public subroutines
+    var _public = {
+      getCurOrien: function() {
+        if(cOC == true) {
+          return 'landscape';
+        } else {
+          return 'portrait';
+        }
+      }
+      
+    return _public;
 })();
