@@ -56,7 +56,14 @@ var checkOrientationChanage = (function() {
         } else {
           return 'portrait';
         }
+      },
+      getWidth: function() {
+        return height;
+      },
+      getHeight: function() {
+        return width;
       }
+    }
       
     return _public;
 })();
