@@ -33,10 +33,13 @@ var checkOrientationChanage = (function() {
 
     // Changes when orientation has changed
     var _changed = {
-      landscape: function() { // put lanscape change function or code here
-        console.log("Landscape");
+      landscape: function() { // put lanscape change function or code here (Use Height and Width for screen pref)
+        console.log("Landscape"); 
+        if(height< 740) {  // Example mobile check after orientation change
+            console.log("Changed on Mobile");
+        }
       },
-      portrait: function() { // put portrait change function or code here
+      portrait: function() { // put portrait change function or code here  (Use Height and Width for screen pref)
         console.log("Portrait");
       }
     };
